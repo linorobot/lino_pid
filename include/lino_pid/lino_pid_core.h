@@ -5,7 +5,7 @@
 #include "ros/time.h"
 
 // Custom message includes. Auto-generated from msg/ directory.
-#include "lino_pid/linoPID.h"
+#include "lino_msgs/PID.h"
 
 // Dynamic reconfigure includes.
 #include <dynamic_reconfigure/server.h>
@@ -19,7 +19,7 @@ public:
   ~LinoPID();
   void configCallback(lino_pid::linoPIDConfig &config, double level);
   void publishMessage(ros::Publisher *pub_message);
-  void messageCallback(const lino_pid::linoPID::ConstPtr &msg);
+  void messageCallback(const lino_msgs::PID::ConstPtr &msg);
 
   double p_;
   double d_;

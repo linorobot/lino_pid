@@ -10,14 +10,14 @@ LinoPID::~LinoPID()
 
 void LinoPID::publishMessage(ros::Publisher *pub_message)
 {
-  lino_pid::linoPID msg;
+  lino_msgs::PID msg;
   msg.p = p_;
   msg.d = d_;
   msg.i = i_;
   pub_message->publish(msg);
 }
 
-void LinoPID::messageCallback(const lino_pid::linoPID::ConstPtr &msg)
+void LinoPID::messageCallback(const lino_msgs::PID::ConstPtr &msg)
 {
   p_ = msg->p;
   d_ = msg->d;

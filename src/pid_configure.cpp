@@ -24,7 +24,7 @@ int main(int argc, char **argv)
   pnh.param("i", i, 0.00);
   pnh.param("rate", rate, 1);
 
-  ros::Publisher pub_message = nh.advertise<lino_pid::linoPID>("pid", 10);
+  ros::Publisher pub_message = nh.advertise<lino_msgs::PID>("pid", 10);
 
   ros::Rate r(rate);
 

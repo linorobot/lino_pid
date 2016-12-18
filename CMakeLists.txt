@@ -3,10 +3,9 @@ project(lino_pid)
 
 find_package(catkin REQUIRED COMPONENTS dynamic_reconfigure message_generation roscpp std_msgs)
 
-add_message_files(
-  FILES
-  linoPID.msg
-)
+#add_message_files(
+#  FILES
+#)
 
 generate_messages(
   DEPENDENCIES
