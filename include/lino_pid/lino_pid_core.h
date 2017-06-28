@@ -5,7 +5,7 @@
 #include "ros/time.h"
 
 // Custom message includes. Auto-generated from msg/ directory.
-#include "lino_msgs/PID.h"
+#include <lino_msgs/PID.h>
 
 // Dynamic reconfigure includes.
 #include <dynamic_reconfigure/server.h>
