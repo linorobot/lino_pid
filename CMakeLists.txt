@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(lino_pid)
 
-find_package(catkin REQUIRED COMPONENTS dynamic_reconfigure message_generation roscpp std_msgs)
+find_package(catkin REQUIRED COMPONENTS dynamic_reconfigure message_generation roscpp std_msgs lino_msgs)
 
 #add_message_files(
 #  FILES
@@ -18,7 +18,7 @@ generate_dynamic_reconfigure_options(
 
 catkin_package(
     INCLUDE_DIRS include
-    CATKIN_DEPENDS dynamic_reconfigure message_runtime roscpp std_msgs
+    CATKIN_DEPENDS dynamic_reconfigure message_runtime roscpp std_msgs lino_msgs
 )
 
 include_directories(include ${catkin_INCLUDE_DIRS})
