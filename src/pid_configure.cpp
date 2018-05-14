@@ -19,9 +19,9 @@ int main(int argc, char **argv)
   int rate;
 
   ros::NodeHandle pnh("~");
-  pnh.param("p", p, 0.05);
-  pnh.param("d", d, 0.10);
-  pnh.param("i", i, 0.00);
+  pnh.param("p", p, 0.6);
+  pnh.param("d", d, 0.3);
+  pnh.param("i", i, 0.5);
   pnh.param("rate", rate, 1);
 
   ros::Publisher pub_message = nh.advertise<lino_msgs::PID>("pid", 10);
